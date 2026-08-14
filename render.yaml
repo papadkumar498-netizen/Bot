@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: nate-higgers-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: OWNER_IDS
+        sync: false
